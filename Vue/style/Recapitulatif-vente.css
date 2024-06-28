@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(218, 180, 145);
+}
+
+p{
+    font-size: 0.7cm;
+}
+
+.element {
+    overflow: hidden;
+}
+
+
+/*##################################*/
+/*            Main part             */
+/*##################################*/
+
+
+#main_container{
+    width: 100%;
+    height: 150vh;
+    position: absolute;
+    top: 15%;
+}
+
+#article_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 95%;
+}
+
+#article{
+
+    width: 95%;
+    height: 100%;
+    position: relative;
+    background-color: rgba(219, 146, 36);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#delimiter{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 80%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+/*##################################*/
+/*          Image container         */
+/*##################################*/
+
+#img_container{
+    margin-top: 4%;
+    width: 40%;
+    height: 30%;
+    background-color: rgb(145, 233, 236);
+}
+
+.img-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+        
+        /*##################################*/
+        /*  control des images container    */
+        /*##################################*/
+.control{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.control button{
+    background-color: rgb(170, 154, 154);
+    opacity: 0.8;
+}
+
+.orbit-previous{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orbit-next{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    left: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    overflow: hidden;
+}
+
+.active{
+    scroll-snap-align: start;
+}
+
+.orbit-slide {
+    object-fit: cover;
+
+}
+
+.orbit-slide img{
+    width: 580px;
+    height: 100%;
+}
+
+
+/*################################*/
+/*# informations container PART  #*/
+/*################################*/
+
+#informations-article{
+    position: relative;
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+    /*#######################################*/
+    /*# informations gauche container PART  #*/
+    /*#######################################*/
+
+#info-gauche{
+    position: relative;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#info-gauche-nom label{
+    font-size: 0.7cm;
+    padding-left: 4em;
+}
+
+
+#info-gauche-etat{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+#info-gauche-etat-input{
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#info-gauche-etat label{
+    font-size: 0.7cm;
+    padding-left: 4em;
+}
+
+
+#info-gauche-details{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#info-gauche-details ul{
+    list-style: inside;
+}
+
+#info-gauche-details ul li{
+    font-size: 0.7cm;
+    padding-left: 4em;
+}
+
+#informations{
+    position: relative;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+    /*#######################################*/
+    /*# informations droite container PART  #*/
+    /*#######################################*/
+
+#info-droite{
+    position: relative;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#info-droite input{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+#info-droite textarea{
+    width: 100%;
+    height: 70%;
+    border: 1px solid black;
+    border-radius: 5px;
+    resize: none;
+}
+
+/*###########################*/
+/*#  Annonce container PART #*/
+/*###########################*/
+
+
+#information-annonces{
+    position: relative;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} 
+
+    /*##################################*/
+    /*#  Annonce container gauche PART #*/
+    /*##################################*/
+
+#info-gauche-expertisation{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+    /*##################################*/
+    /*#  Annonce container droit PART  #*/
+    /*##################################*/
+
+
+#info-droite{
+    position: relative;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#info-droite-durée{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+#information-annonces label{
+    font-size: 0.7cm;
+    padding-left: 4em;
+}
+
+
+/*############################*/
+/*#  Bouton container PART   #*/
+/*############################*/
+
+#container-button{
+    position: relative;
+    width: 50%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+#container-button button{
+    margin-top: 6%;
+    width: 40%;
+    height: 30%;
+    background-color: rgb(161, 94, 30);
+    border: none;
+    border-radius: 10px;
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+    
+#container-button button:hover{
+    background-color: rgb(161, 94, 30);
+    opacity: 0.8;
+}
+
+
+
+
+/*#############################*/
+/*#  Pop Hup container PART   #*/
+/*#############################*/
+
+      /* Positionnez la forme Popup */
+    .login-popup {
+        position: relative;
+        text-align: center;
+        width: 100%;
+
+    }
+      /* Masquez la forme Popup */
+    .form-popup {
+        display: none;
+        position: fixed;
+        left: 50%;
+        top: 40%;
+        transform: translate(-45%, 5%);
+        border: 2px solid rgb(155, 52, 52);
+        z-index: 9;
+    }
+      /* Styles pour le conteneur de la forme */
+    .form-container {
+        max-width: 300px;
+        padding: 20px;
+        background-color: #fff;
+    }
+      /* Largeur complète pour les champs de saisie */
+    .form-container input[type="text"],
+    .form-container input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #eee;
+    }
+      /* Quand les entrées sont concentrées, faites quelque chose */
+    .form-container input[type="text"]:focus,
+    .form-container input[type="password"]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+      /* Stylez le bouton de connexion */
+    .form-container .btn {
+        background-color: #8ebf42;
+        color: #fff;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 10px;
+        opacity: 0.8;
+    }
+      /* Stylez le bouton pour annuler */
+    .form-container .cancel {
+        background-color: #cc0000;
+    }
+      /* Planez les effets pour les boutons */
+    .form-container .btn:hover,
+    .open-button:hover {
+        opacity: 1;
+    }
+
+/*****************  FOOTER  *****************/
+
+#footer_container{
+    position: absolute;
+    bottom: -65%;
+    width: 100%;
+    height: 5%;
+    background-color: rgb(161, 94, 30);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#footer_container div{
+    display: flex;
+    background-color: rgb(134, 143, 151);
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+}
+
+
+#footer_container h1{
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 25px;
+}
+
+#footer__container__left{
+    width: 20%;
+    border-radius: 10px;
+}
+
+#footer__container__right{
+    width: 20%;
+    border-radius: 10px;
+}
+

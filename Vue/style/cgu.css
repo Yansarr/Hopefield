@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+body{
+    background-color: rgb(218, 180, 145);
+}
+  
+p {
+    font-size: 0.7cm;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+ul {
+    list-style-type: '-';
+}
+
+li {
+    font-size: 0.7cm;
+}
+  
+.element {
+    overflow: hidden;
+}
+
+main {
+    position : relative;
+    top:150px;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.0cm;
+}
+
+div {
+    margin-bottom: 100px;
+}
+
+h2 {
+    font-size: 0.9cm;
+}

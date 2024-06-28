@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FFDFBA;
+}
+
+p{
+    font-size: 0.7cm;
+}
+
+#main_part{
+    position : absolute;
+    top:10%;
+    width: 100%;
+    height:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Categorie{
+    width: 15%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;  
+    background-color: rgba(224, 139, 26, 0.719);
+    margin-top: 1%;
+    padding-right: 1%;
+    padding-left: 1%;
+    border-radius: 10px;
+}
+
+#main_part_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1%;
+}
+
+#main_part__container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#enchere{
+    width: 15%;
+    height: 300px;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(224, 139, 26, 0.719);
+    border-radius: 10px;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+
+    margin-left : 3%;
+    margin-right : 3%;
+}
+
+#enchere_carac{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#enchere_carac a{
+    margin-top: 7%;
+}
+
+#enchere img{
+    width: 75%;
+    height: 45%;
+    border-radius: 10px;
+}
+
+
+
+/*****************  FOOTER  *****************/
+
+#footer_container{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 5%;
+    background-color:#FFDFBA;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#footer_container div{
+    display: flex;
+    background-color: #FFC633;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+}
+
+
+#footer_container h1{
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 25px;
+}
+
+#footer__container__left{
+    width: 20%;
+    border-radius: 10px;
+    padding: 10px 32px;
+}
+
+#footer__container__right{
+    width: 20%;
+    border-radius: 10px;
+    padding: 10px 32px;
+}

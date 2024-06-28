@@ -1,0 +1,14 @@
+              List of relations
+ Schema |       Name        | Type  | Owner  
+--------+-------------------+-------+--------
+ public | administrateur    | table | sekmas
+ public | attente_expertise | table | sekmas
+ public | enchere           | table | sekmas
+ public | encherisseurs     | table | sekmas
+ public | expert            | table | sekmas
+ public | expertise         | table | sekmas
+ public | fossile           | table | sekmas
+ public | fossile_image     | table | sekmas
+ public | particulier       | table | sekmas
+(9 rows)
+

@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(218, 180, 145);
+}
+
+h2{
+    font-size: 1cm;
+    text-align: left;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+p{
+    font-size: 0.5cm;
+    text-align: center;
+}
+
+.element {
+    overflow: hidden;
+}
+
+input{
+    font-size: 0.7cm;
+    
+}
+textarea{
+    font-size: 0.7cm;
+}
+
+
+/*##################################*/
+/*#        Body PART               #*/
+/*##################################*/
+
+main h3{
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 20px;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    color: red;
+}
+
+.info-box {
+    margin : 1%;
+    position: absolute;
+    left: 4%;
+    top:10%;
+    width: 90%;
+    height: 70vh;
+}
+
+.info-box ul {
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.info-box li {
+    float: left;
+    list-style-type: none;
+    width: 10%;
+}
+
+.info-box li a {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    line-height: 3;
+    background-color: #ec7535;
+    color: black;
+    text-align: center;
+}
+
+.info-box li a:focus, .info-box li a:hover {
+    background-color: #964b4b;
+
+    color: white;
+}
+
+.info-box li a.active {
+    background-color: #93441A;
+    color: white;
+}
+
+.info-box .panels {
+    height: 100%;
+    position: relative;
+    clear: both;
+}
+
+
+.info-box article {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 10px;
+    color: white;
+    background-color: #93441A;
+}
+
+.info-box .active-panel {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*##################################*/
+/*#      Image container PART      #*/
+/*##################################*/
+
+#upload{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+#upload_container{
+    position: relative;
+    left: 2%;
+    width: 98%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#upload_container_upload{
+    position: relative;
+    width: 45%;
+    height: 30%;
+    color: white;
+    background-color: #c09780;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#upload_container_upload button{
+    width: 50%;
+    height: 20%;
+    color: white;
+    background-color: #584040;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#upload_container_img {
+    width: 100%;
+    height: 30%;
+    color: white;
+    background-color: #382727;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#upload_container_img img {
+    width: 18%;
+    height: 75%;
+    margin: 1%;
+    border: 1px solid black;
+}
+
+#upload_container_img input{
+    width: 18%;
+    height: 75%;
+    margin: 1%;
+    border: 1px solid black;
+}
+
+#button-page-upload{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#button-page-upload button{
+    width: 20%;
+    height: 100%;
+    color: white;
+    background-color: #584040;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+/*################################*/
+/*# informations container PART  #*/
+/*################################*/
+
+#informations-article{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+    /*#######################################*/
+    /*# informations gauche container PART  #*/
+    /*#######################################*/
+
+#info-gauche{
+    position: relative;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#info-gauche-nom{
+    width: 80%;
+    height: 4%;
+}
+
+
+#info-gauche input{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+#info-gauche-etat{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#info-gauche-etat h2{
+    text-align: center;
+}
+
+#info-gauche-etat input{
+    width: 50%;
+    height: 25%;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 1.5%;
+}
+
+#info-gauche-etat-input label{
+    font-size: 0.7cm;
+}
+
+
+#info-gauche-details{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+#informations{
+    position: relative;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#informations div{
+    width: 30%;
+}
+
+#informations div label{
+    font-size: 0.7cm;
+}
+
+    /*#######################################*/
+    /*# informations droite container PART  #*/
+    /*#######################################*/
+
+#info-droite{
+    position: relative;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#info-droite input{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+#info-droite textarea{
+    width: 100%;
+    height: 70%;
+    border: 1px solid black;
+    border-radius: 5px;
+    resize: none;
+}
+
+
+/*###########################*/
+/*#  Annonce container PART #*/
+/*###########################*/
+
+
+#information-annonces{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+    /*##################################*/
+    /*#  Annonce container gauche PART #*/
+    /*##################################*/
+
+#info-gauche-prix{
+    width: 100%;
+    height: 5%;
+}
+#info-gauche-prix h2 {
+    text-align: left;
+}
+
+#info-gauche-prix input{
+    border-radius: 15px;
+}
+
+#info-gauche-expertisation{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+
+#info-gauche-expertisation{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#info-gauche-expertisation input{
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 1%;
+}
+
+#info-gauche-expertisation label{
+    font-size: 0.5cm;
+}
+
+
+    /*##################################*/
+    /*#  Annonce container droit PART  #*/
+    /*##################################*/
+
+
+#info-droite{
+    position: relative;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#info-droite input{
+    width: 100%;
+    height: 5%;
+    border-radius : 15px
+}
+
+#info-droite-durée{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#info-droite-durée h2{
+    text-align: left;
+}
+
+#info-droite-durée select{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 0.7cm;
+}
+
+#info-droite-vente{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#info-droite-vente input{
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 1%;
+}
+
+#info-droite-vente label{
+    font-size: 0.5cm;
+}
+
+/*###########################*/
+/*#  bouton container PART  #*/
+/*###########################*/
+
+
+#button-page-info{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+#button-page-info button{
+    width: 40%;
+    height: 70%;
+    background-color: #FFC633;
+    border: none;
+    border-radius: 10px;
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+#button-page-info a{
+    color: black;
+}
+#button-page-info a:hover{
+    color: white;
+}
+
+#button-page-info button:hover{
+    background-color: rgb(161, 94, 30);
+    opacity: 0.8;
+    color : white;
+}
